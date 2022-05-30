@@ -3,7 +3,7 @@ import sys
 import random
 source = sys.argv[1]
 target = sys.argv[2]
-p_path = os.path.join('/research/masaito/OfficeHomeDataset_10072016/', source)
+p_path = os.path.join('data/', source)
 dir_list = os.listdir(p_path)
 dir_list.sort()
 
@@ -11,10 +11,10 @@ source_list = dir_list[:15]
 target_list = dir_list
 print(source_list)
 print(target_list)
-path_target = "../txt/target_%s_labeled.txt"%(target)
+path_target = "./txt/target_%s_labeled.txt"%(target)
 write_target = open(path_target,"w")
 
-p_path = os.path.join('/research/masaito/OfficeHomeDataset_10072016/', target)
+p_path = os.path.join('data/', target)
 dir_list = os.listdir(p_path)
 dir_list.sort()
 count = 0

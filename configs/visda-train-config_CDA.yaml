@@ -1,7 +1,7 @@
 data:
   dataset:
     name: officehome # choices are ['office', 'officehome', 'caltech-imagenet', 'visda2017']
-    root_path: /research/masaito/OfficeHomeDataset_10072016 # /path/to/dataset/root
+    root_path: /research/masaito # /path/to/dataset/root
     n_share: 12 # number of classes to be shared
     n_source_private: 0 # number of classes in source private domain
     n_total: 12 # number of classes in total

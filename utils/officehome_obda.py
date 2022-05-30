@@ -2,7 +2,7 @@ import os
 import sys
 source = sys.argv[1]
 target = sys.argv[2]
-p_path = os.path.join('/research/masaito/OfficeHomeDataset_10072016/', source)
+p_path = os.path.join('data/', source)
 dir_list = os.listdir(p_path)
 dir_list.sort()
 
@@ -10,8 +10,8 @@ source_list = dir_list[:15]
 target_list = dir_list
 print(source_list)
 print(target_list)
-path_source = "../txt/source_%s_obda.txt"%(source)
-path_target = "../txt/target_%s_obda.txt"%(target)
+path_source = "./txt/source_%s_obda.txt"%(source)
+path_target = "./txt/target_%s_obda.txt"%(target)
 write_source = open(path_source,"w")
 write_target = open(path_target,"w")
 
@@ -26,7 +26,7 @@ for k, direc in enumerate(source_list):
             else:
                 continue
 
-p_path = os.path.join('/research/masaito/OfficeHomeDataset_10072016/', target)
+p_path = os.path.join('data/', target)
 dir_list = os.listdir(p_path)
 dir_list.sort()
 for k, direc in enumerate(target_list):

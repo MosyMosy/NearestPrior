@@ -8,6 +8,6 @@ files = [line.strip() for line in file.readlines()]
 for line in files:
     name = line.split(' ')[0]
     ind = line.split(' ')[1]
-    name = name.replace('/research/masaito', 'data')
+    name = name.replace('data', 'data')
     file_new.write('%s %s\n'%(name, ind))
 
