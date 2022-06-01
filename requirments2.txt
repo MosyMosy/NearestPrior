@@ -10,7 +10,7 @@ backcall
 bleach
 bravado
 bravado-core
-bzip2
+#bzip2
 c-ares
 ca-certificates
 cachetools
