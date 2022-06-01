@@ -6,7 +6,7 @@ astunparse
 async-generator
 attrs
 backcall
-blas
+#blas
 bleach
 bravado
 bravado-core
