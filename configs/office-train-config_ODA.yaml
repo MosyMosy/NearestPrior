@@ -29,6 +29,7 @@ test:
   test_feat: False
 misc:
   gpus: 1 # how many GPUs to be used, 0 indicates CPU only
+  gpu_devices: 1
 
 log:
   root_dir: log # the log directory (log directory will be {root_dir}/{method}/time/)
