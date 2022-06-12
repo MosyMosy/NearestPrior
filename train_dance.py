@@ -30,7 +30,7 @@ parser.add_argument('--target_path', type=str, default='./utils/target_list.txt'
 parser.add_argument('--log-interval', type=int, default=100, metavar='N',
                     help='how many batches to wait before logging training status')
 parser.add_argument('--exp_name', type=str, default='office_close', help='/path/to/config/file')
-parser.add_argument("--gpu_devices", type=int, default=1, help="")
+parser.add_argument("--gpu_devices", type=int, help="" nargs='+')
 
 # args = parser.parse_args()
 args = parser.parse_args()
