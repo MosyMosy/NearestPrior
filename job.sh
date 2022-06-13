@@ -16,7 +16,7 @@
 
 nvidia-smi
 
-source ~/envs/ENV/bin/activate
+source ~/envs/NearestPrior/bin/activate
 
 echo "------------------------------------< Data preparation>----------------------------------"
 echo "Copying the source code"
@@ -54,7 +54,7 @@ date +"%T"
 cd $SLURM_TMPDIR
 cd NearestPrior
 
-sh script/run_office_obda.sh $gpu-id configs/office-train-config_ODA.yaml
+sh script/run_office_obda.sh $gpu_devices 0 configs/office-train-config_ODA.yaml
 
 echo "-----------------------------------<End of run the program>---------------------------------"
 date +"%T"
