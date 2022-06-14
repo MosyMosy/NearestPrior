@@ -3,7 +3,7 @@ import random
 import sys
 source = sys.argv[1]
 target = sys.argv[2]
-p_path = os.path.join('data/office/', source,'images')
+p_path = os.path.join('data/', source,'images')
 dir_list = os.listdir(p_path)
 #print(dir_list)
 class_list_shared = ["back_pack", "bike", "calculator", "headphones", "keyboard", "laptop_computer", "monitor", "mouse", "mug", "projector"]
@@ -29,7 +29,7 @@ for k, direc in enumerate(dir_list):
                 write_source.write('%s %s\n' % (file_name, class_list_shared.index(class_name)))
             else:
                 continue
-p_path = os.path.join('data/office/', target,'images')
+p_path = os.path.join('data/', target,'images')
 dir_list = os.listdir(p_path)
 #print(dir_list)
 for k, direc in enumerate(target_list):
