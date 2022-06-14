@@ -1,4 +1,4 @@
-from torchvision import models
+import resnet_official as models
 import torch
 import torch.nn.functional as F
 import torch.nn as nn
