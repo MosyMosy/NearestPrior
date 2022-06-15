@@ -7,7 +7,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 from torch.autograd import Variable
 import torchvision.transforms as transforms
-from apex import amp, optimizers
+from torch.cuda import amp # from apex import amp, optimizers
 from data_loader.get_loader import get_loader
 from utils.utils import *
 from utils.lr_schedule import inv_lr_scheduler
